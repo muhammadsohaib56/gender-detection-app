@@ -1,3 +1,4 @@
+# Streamlit
 streamlit==1.38.0
 
 # Core dependencies
@@ -5,19 +6,17 @@ numpy==1.26.4
 pandas==2.3.3
 Pillow==10.4.0
 
-# PyTorch CPU (compatible with Streamlit Cloud)
-torch==2.3.0
-torchvision==0.18.0
+# PyTorch CPU (supported by Streamlit Cloud)
+torch==2.2.2
+torchvision==0.17.2
 
-# OpenCV
+# OpenCV (headless for cloud)
 opencv-python-headless==4.10.0.84
 
-# DeepFace + models
+# DeepFace (force CPU version, avoids TensorFlow GPU)
 deepface==0.0.89
-mtcnn==1.0.0
-retina-face==0.0.17
 
-# YOLO
+# YOLO (ultralytics CPU-safe)
 ultralytics==8.3.0
 
 # Utilities
